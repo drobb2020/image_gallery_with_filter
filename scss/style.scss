@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Andika New Basic", sans-serif;
+}
+section {
+  padding: 20px;
+  width: 1280px;
+  margin: 40px auto;
+}
+ul {
+  display: flex;
+  margin-bottom: 10px;
+}
+li {
+  list-style: none;
+  background: #eeeeee;
+  padding: 8px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  &:active {
+    background: #03a9f4;
+    color: #ffffff;
+  }
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+.itemBox {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
